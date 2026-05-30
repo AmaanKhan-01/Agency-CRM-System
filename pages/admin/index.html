@@ -72,16 +72,102 @@
 
             <div class="topbar">
 
-                <div>
-                    <h2>Dashboard Overview</h2>
-                    <p>Welcome back, Aman 👋</p>
-                </div>
+    <div>
 
-                <div class="admin-profile">
-                    AK
-                </div>
+        <h2>Dashboard Overview</h2>
 
-            </div>
+        <p>Welcome back, Aman 👋</p>
+
+    </div>
+
+    <div class="topbar-actions">
+
+        <button id="openClientModal" class="action-btn">
+            + Add Client
+        </button>
+
+        <button id="openProjectModal" class="action-btn">
+            + New Project
+        </button>
+
+        <div class="admin-profile">
+            AK
+        </div>
+
+    </div>
+
+</div>
+<div class="modal" id="clientModal">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h2>Add Client</h2>
+
+            <span class="close-client">&times;</span>
+
+        </div>
+
+        <form>
+
+            <input type="text" placeholder="Client Name">
+
+            <input type="email" placeholder="Client Email">
+
+            <input type="text" placeholder="Phone Number">
+
+            <input type="text" placeholder="Company Name">
+
+            <button type="submit">
+                Save Client
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+<div class="modal" id="projectModal">
+
+    <div class="modal-content">
+
+        <div class="modal-header">
+
+            <h2>Create Project</h2>
+
+            <span class="close-project">&times;</span>
+
+        </div>
+
+        <form>
+
+            <input type="text" placeholder="Project Name">
+
+            <input type="text" placeholder="Client Name">
+
+            <input type="date">
+
+            <input type="number" placeholder="Budget">
+
+            <select>
+
+                <option>Select Status</option>
+                <option>Pending</option>
+                <option>In Progress</option>
+                <option>Completed</option>
+
+            </select>
+
+            <button type="submit">
+                Create Project
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
 
             <!-- ANALYTICS -->
 
@@ -213,7 +299,52 @@
         </main>
 
     </div>
+    <div class="activity-panel">
 
+    <div class="panel-header">
+        <h3>Recent Activity</h3>
+    </div>
+
+    <div class="activity-item">
+        <i class="ri-user-add-fill"></i>
+        <p>New client registered</p>
+    </div>
+
+    <div class="activity-item">
+        <i class="ri-task-fill"></i>
+        <p>Task completed by Rahul</p>
+    </div>
+
+    <div class="activity-item">
+        <i class="ri-folder-fill"></i>
+        <p>New project created</p>
+    </div>
+    <div class="activity-item">
+    <div>
+        <p>New client registered</p>
+        <span>2 minutes ago</span>
+    </div>
+</div>
+
+</div>
+ <div class="notification-panel">
+
+    <h3>Notifications</h3>
+
+    <div class="notification">
+        Payment received from Ahmed
+    </div>
+
+    <div class="notification">
+        New support request
+    </div>
+
+    <div class="notification">
+        Project deadline tomorrow
+    </div>
+
+</div>
+<script src="/js/app.js"></script>
 </body>
 
 </html>
